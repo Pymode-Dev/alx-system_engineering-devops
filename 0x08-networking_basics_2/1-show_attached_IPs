@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Show all attached IPv4 Ip address  on the machine
+
+ifconfig | grep -Eo "inet ([0-9]*\.){3}[0-9]*" | cut -b 6-
